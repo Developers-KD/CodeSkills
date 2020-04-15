@@ -125,11 +125,8 @@ body {
 }
 
 h1{
-    margin: auto auto;
+ 
     font-size: 30px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
     text-transform: capitalize;
     font-family: 'Lobster', cursive;
     letter-spacing: 3px;
@@ -150,7 +147,7 @@ h1:before{
         width: 0;
     }
     50%{
-        width: 100%;
+        width: 305.5px;
     }
     100%{
         width: 0;
