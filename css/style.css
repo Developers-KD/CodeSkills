@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    background-image: linear-gradient(to right,rgba(240, 151, 35, 0.767),white,rgba(23, 245, 79, 0.884));
+    margin: 0;
+    padding: 0;
+    font-family: 'open Sans' , 'sans-serif';
+    background-size: cover;
+    /* background-image: linear-gradient(rgba(53, 127, 121, 0.3),rgba(0, 0, 0, 0.3)),url("https://cdn.pixabay.com/photo/2016/11/29/04/18/hot-air-balloons-1867279_1280.jpg");
+    background-size: cover;
+    background-repeat: repeat-x; */
+}
+
+#btn {
+    position: absolute;
+    /* top: 50%; */
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    /* font-size: 24px; */
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 30px;
+}
+#btn:hover{
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+#btn:before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    /* background-size: 400%; */
+    border-radius: 40px;
+    opacity: 0;
+    transition: 0.8s;
+}
+#btn:hover::before{
+    filter: blur(40px);
+    opacity: 1;
+}
+
+#MyImg{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.text1{
+    display: inline;
+    position: relative;
+    border-radius: 5px;
+    color: #000;
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    /* margin-bottom: -40px; */
+    animation: text2 3s 1;
+}
+/* @keyframes text1{
+    0%{
+        color:gray;
+        margin-bottom: -40px;
+    }
+    30%{
+        color:rgb(59, 53, 53);
+        letter-spacing: 15px;
+        margin-bottom: -40px;
+    }
+    85%{
+        color: black;
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+} */
+@keyframes text2{
+    0%{
+        color:gray;
+        letter-spacing: 5px;
+        margin-bottom: -40px;
+    }
+    50%{
+        color:rgb(44, 39, 39);
+        letter-spacing: 15px;
+        margin-bottom: -40px;
+    }
+    100%{
+        color:gray;
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+.text2{
+    display: block;
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(139, 243, 20);
+
+}
+
+.container span{
+    margin: auto auto;
+}
+
+h1{
+    margin: auto auto;
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-transform: capitalize;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 3px;
+    color: transparent;
+
+}
+h1:before{
+    content: attr(data-text);
+    position: absolute;
+    color: black;
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    animation: type 9s steps(20) infinite;
+    white-space: nowrap;
+}
+@keyframes type{
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0;
+    }
+}
