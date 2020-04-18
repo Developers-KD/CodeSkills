@@ -68,24 +68,23 @@ body {
     font-family: 'Lobster', cursive;
     font-size: 60px;
     font-weight: 700;
-    letter-spacing: 7px;
-    /* margin-bottom: -40px; */
+    letter-spacing: 6px;
     animation: text2 3s 1;
 }
 @keyframes text2{
     0%{
         color:gray;
-        letter-spacing: 5px;
+        letter-spacing: 6px;
         margin-bottom: -40px;
     }
     50%{
         color:rgb(44, 39, 39);
-        letter-spacing: 15px;
+        letter-spacing: 8px;
         margin-bottom: -40px;
     }
     100%{
         color:gray;
-        letter-spacing: 8px;
+        letter-spacing: 6px;
         margin-bottom: -40px;
     }
 }
