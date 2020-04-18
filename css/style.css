@@ -2,10 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 body {
     /* background-image: linear-gradient(to right,rgba(240, 151, 35, 0.767),white,rgba(23, 245, 79, 0.884)); */
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-family: 'open Sans', 'sans-serif';
     background-color: rgb(209, 219, 220);
+    box-sizing: border-box;
 }
 
 #btn {
@@ -149,7 +150,9 @@ h1 {
     }
 }
 
-.main {
+.main-container {
+    margin: 3%;
+    padding: 0px;
     height: 100%;
     width: 100%;
     text-align: center;
@@ -189,7 +192,9 @@ h1 {
             width: 0%;
         }
     }
-    .main {
+    .main-container {
+        /* margin: 20px 20px 20px 20px; */
+        padding: 20px;
         flex-direction: column;
         align-items: center;
     }
